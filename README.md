@@ -25,31 +25,31 @@ Running the program:
 
 Using the program:
 - First, select the files you wish to plot:
-	o You may choose multiple files by holding Ctrl
-	o To choose files in different folders, select files from one folder, press Open, then click 'Select...' again to choose more
-	o If you want a new set of files, make sure to press 'Reset' to clear the list of selected filepaths
-	o If you have selected a lot of large files, they can take some time to load. A 'Loading...' indicator will appear in the window
+	- You may choose multiple files by holding Ctrl
+	- To choose files in different folders, select files from one folder, press Open, then click 'Select...' again to choose more
+	- If you want a new set of files, make sure to press 'Reset' to clear the list of selected filepaths
+	- If you have selected a lot of large files, they can take some time to load. A 'Loading...' indicator will appear in the window
 - Next, select the peaks which you want to plot 
-	o These peaks are loaded based on the files which you choose so you must load the file first
+	- These peaks are loaded based on the files which you choose so you must load the file first
 - At this point, you can press 'Plot' at the bottom right, but there are several optional settings to change:
-	o Select extent of smoothing: This is set to 1 as default (no smoothing), but increasing the value will effectively plot each point averaged with 'x' closest points
+	- Select extent of smoothing: This is set to 1 as default (no smoothing), but increasing the value will effectively plot each point averaged with 'x' closest points
 	                              The program does this by convolving the raw data with a box function (see code for details)
-	o Savitsky-Golay filter: This is a more sophisticated smoothing function which acts as a low pass filter. The main idea behind this approach is to make
+	- Savitsky-Golay filter: This is a more sophisticated smoothing function which acts as a low pass filter. The main idea behind this approach is to make
      				 for each point a least-square fit with a polynomial of high order over an odd-sized window centered at the point.
 				 The program will automatically choose a window-length of 10% the number of data points in your sample, and polynomial order 1.
 				 Note that the window length must be an odd number, and the polynomial order must be less than the window length (lower = more smoothing).
-	o Set name for each data set: By default these are named Set 1, Set 2 etc. Changing the text will change the labels in the legend when you plot your graph
+	- Set name for each data set: By default these are named Set 1, Set 2 etc. Changing the text will change the labels in the legend when you plot your graph
 				      Using the 'Auto name' button will automatically set the labels to the name of the file.
-	o Convert sputtering time to depth: By default, this option is not selected, meaning that your graph will be 'Intensity' vs 'Sputtering time', selecting this
+	- Convert sputtering time to depth: By default, this option is not selected, meaning that your graph will be 'Intensity' vs 'Sputtering time', selecting this
 	                                    will automatically convert the x axis from Sputtering time to Depth. This calculation is done based on the calculated depth after 10 000s which can be 
 	                                    easily calculated using prepackaged IONTOF software.
 					    It initially assumes a depth of 300 nm (which is average for 1 keV), this can be changed individually for each file, to enable visualisation of data
 					    run with different settings (eg 1 keV vs 2 keV)
 	  				    CAUTION: This function assumes uniform sputtering rate, which is not a particularly great method.
-	o Plot extent: The default option sets this to automatically plot the full range of data. 
+	- Plot extent: The default option sets this to automatically plot the full range of data. 
 	               If however you want the x axis to cut-off at a different value, then uncheck
 	               the auto tickbox and set the sputtering time that you want the plot to stop at.
-	o Normalisation: This will normalise all data by either the niobium or total signal of each file. Press again to turn off.
+	- Normalisation: This will normalise all data by either the niobium or total signal of each file. Press again to turn off.
 - Note that if you use the program wrong, an error message should appear to tell you how to fix it and there are also hover-over tips which summarise this information.
 
 Editing the program:
