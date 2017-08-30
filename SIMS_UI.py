@@ -17,7 +17,7 @@ TO RUN THE PROGRAM:
  o If you want to run the code again, and PyCharm is still open, you can now just press the green play button in top right.
 """
 
-# Global variable for desired peaks on graph, initialised as empty list
+# Global variables initialised for use by the program
 des_pk = []                         # List for desired peaks
 all_names = []                      # List for peaks available in file
 files = []                          # List for desired filepaths
