@@ -1,6 +1,9 @@
 # SIMS-Analysis-GUI
 Graphical user interface developed during internship at Fermilab to analyse SIMS depth profile data
 
+![alt text](https://github.com/grlewis333/SIMS-Analysis-GUI/blob/master/UI%20screenshot.png?raw=true)
+
+
 First time set-up:
 - Download and install a python client, PyCharm was the one used to create this program
 - Download and configure the additional imported modules, these are: NumPy, Matplotlib.Pyplot, OS and PyQt4. 
